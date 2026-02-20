@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#09101d">
+    
+    <title>Diego Dos Santos | Analista de Sistemas & Desarrollador Fullstack </title>
+
+    <!-- SEO Mejorado -->
+    <meta name="description" content="Portfolio de Diego Dos Santos, Desarrollador Fullstack especializado en soluciones web para emprendedores. HTML, CSS, JavaScript, PHP, Python y más.">
+    <meta name="keywords" content="desarrollador web, fullstack, portfolio, Diego Dos Santos, desarrollo web, programación">
+    <meta name="author" content="Diego Dos Santos">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://diegodev.com/">
+    <meta property="og:title" content="Diego Dos Santos | Desarrollador Fullstack">
+    <meta property="og:description" content="Desarrollo web y mobile para emprendedores. Menús digitales, landing pages y aplicaciones personalizadas.">
+    <meta property="og:image" content="https://diegodev.com/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://diegodev.com/">
+    <meta property="twitter:title" content="Diego Dos Santos | Desarrollador Fullstack">
+    <meta property="twitter:description" content="Desarrollo web y mobile para emprendedores. Menús digitales, landing pages y aplicaciones personalizadas.">
+    <meta property="twitter:image" content="https://diegodev.com/og-image.jpg">
+
+    <!-- REEMPLAZA esto en tu <head> -->
+<!-- Favicon tradicional -->
+<link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+
+<!-- Apple Touch Icon -->
+<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+
+<!-- Android/Modern Browsers -->
+<link rel="icon" type="image/png" sizes="192x192" href="/img/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/img/android-chrome-512x512.png">
+
+<!-- Web App Manifest -->
+<link rel="manifest" href="img/site.webmanifest">
+
+<!-- Theme Color -->
+<meta name="theme-color" content="#6bb6ff" content="#09101d">
+    
+    <!-- Preconnect para optimización -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <!-- Font Awesome para iconos profesionales -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Agrega esto ANTES del </head> en tu HTML -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Diego Dos Santos",
+  "jobTitle": "Analista de Sistemas & Desarrollador Fullstack ",
+  "url": "https://diegodev.com",
+  "sameAs": [
+    "https://www.linkedin.com/in/diego-dos-santos-9627b22a3/",
+    "https://github.com/GitDiegoDev"
+  ],
+  "knowsAbout": [
+    "HTML5", "CSS3", "JavaScript", "PHP", "Python", 
+    "MySQL", "APIs REST", "Git", "Desarrollo Web"
+  ],
+  "description": "Desarrollador Fullstack especializado en soluciones web para emprendedores. Creo menús digitales, landing pages y aplicaciones personalizadas.",
+  "email": "dossantosdiegobr@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "AR"
+  }
+}
+</script>
+</head>
+<body>
+    <!-- Canvas para las partículas de fondo -->
+    <canvas id="particleCanvas" aria-hidden="true"></canvas>
+
+    <!-- Skip to main content para accesibilidad -->
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+    <header>
+        <nav class="navbar" role="navigation" aria-label="Navegación principal">
+            <div class="nav-container">
+                <a href="#inicio" class="logo" aria-label="Diego.Dev - Inicio">
+                    <span class="logo-text">Diego</span><span class="logo-dot">.</span><span class="logo-tech">Dev</span>
+                </a>
+                
+                <button id="toggleBtn" class="toggle-btn" aria-expanded="false" aria-controls="primary-navigation" aria-label="Abrir menú de navegación">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <ul id="primary-navigation" class="nav-links">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#sobre">Sobre mí</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#contacto" class="nav-cta">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="inicio" class="hero">
+            <div class="hero-content container">
+                <p class="hero-greeting"><i class="fas fa-hand-wave"></i> Hola, soy</p>
+                <h1 class="hero-title">
+                    <span class="hero-name">Diego Dos Santos</span>
+                </h1>
+                <p class="hero-subtitle">Analista de Sistemas & Desarrollador Fullstack</p>
+                <p class="hero-description">Ayudo a emprendedores a impulsar sus negocios con soluciones web modernas, prácticas y que realmente generan resultados</p>
+                
+                <div class="hero-actions">
+                    <a href="#proyectos" class="btn-primario">
+                        <span>Ver Proyectos</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contacto" class="btn-secundario">Trabajemos juntos</a>
+                </div>
+            </div>
+            
+            <div class="scroll-indicator" aria-hidden="true">
+                <span class="scroll-text">Scroll</span>
+                <div class="scroll-arrow">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobre mí Section -->
+        <section id="sobre" class="section sobre">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-number">01.</span>
+                    <h2>Sobre mí</h2>
+                    <div class="section-line"></div>
+                </div>
+                
+                <div class="sobre-content">
+                    <div class="sobre-text">
+                        <p class="sobre-intro">Hola, soy Diego. Como <strong>analista de sistemas y desarrollador</strong>, me dedico a crear soluciones web que sean rápidas, modernas y, sobre todo, útiles.</p>
+
+                        <p>¿Mi enfoque? Desarrollar interfaces que cualquiera pueda usar sin manuales, y crear herramientas que automaticen esos procesos que te quitan tiempo valioso. Especialmente para emprendedores y pymes que necesitan optimizar cada recurso.</p>
+                        
+                        <p>Al final del día, lo que más me motiva es ver cómo una idea se transforma en una herramienta digital que realmente impacta positivamente en el trabajo de las personas.</p>
+                    </div>
+
+                    <div class="sobre-stats">
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fas fa-calendar-alt"></i></div>
+                            <h3 class="stat-number">+2</h3>
+                            <p class="stat-label">Años de experiencia</p>
+                        </div>
+                        
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fas fa-rocket"></i></div>
+                            <h3 class="stat-number">10+</h3>
+                            <p class="stat-label">Proyectos completados</p>
+                        </div>
+                        
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fas fa-smile"></i></div>
+                            <h3 class="stat-number">100%</h3>
+                            <p class="stat-label">Clientes satisfechos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section skills">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-number">02.</span>
+                    <h2>Tecnologías & Skills</h2>
+                    <div class="section-line"></div>
+                </div>
+                
+                <div class="skills-intro">
+                    <p>Estas son algunas de las tecnologías con las que trabajo día a día para crear soluciones digitales efectivas:</p>
+                </div>
+
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <h3>HTML5</h3>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-bar" style="width: 95%"></div>
+                        </div>
+                        <span class="skill-percentage">95%</span>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i class="fab fa-css3-alt"></i>
+                            </div>
+                            <h3>CSS3</h3>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-bar" style="width: 90%"></div>
+                        </div>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i class="fab fa-js-square"></i>
+                            </div>
+                            <h3>JavaScript</h3>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-bar" style="width: 88%"></div>
+                        </div>
+                        <span class="skill-percentage">88%</span>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i class="fab fa-php"></i>
+                            </div>
+                            <h3>PHP</h3>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-bar" style="width: 85%"></div>
+                        </div>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h3>MySQL</h3>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-bar" style="width: 87%"></div>
+                        </div>
+                        <span class="skill-percentage">87%</span>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <h3>Python</h3>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-bar" style="width: 82%"></div>
+                        </div>
+                        <span class="skill-percentage">82%</span>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3>APIs REST</h3>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-bar" style="width: 78%"></div>
+                        </div>
+                        <span class="skill-percentage">78%</span>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i class="fab fa-java"></i>
+                            </div>
+                            <h3>Java</h3>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-bar" style="width: 93%"></div>
+                        </div>
+                        <span class="skill-percentage">93%</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Proyectos Section -->
+        <section id="proyectos" class="section proyectos">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-number">03.</span>
+                    <h2>Proyectos Destacados</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="proyectos-grid">
+                    <article class="proyecto-card">
+                        <div class="proyecto-image">
+                            <img src="/img/one.webp" alt="Vista previa del Menú Digital Profesional" loading="lazy">
+                        </div>
+                        <div class="proyecto-content">
+                            <span class="proyecto-tag">Cliente</span>
+                            <h3>Menú Digital Profesional</h3>
+                            <p>Sistema completo, menú digital con carrito de compras que permite realizar pedidos directamente por WhatsApp y panel de control. Proyecto real implementado para restaurante.</p>
+                            
+                            <div class="tech-tags">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Responsive</span>
+                                <span class="tech-tag">API WhatsApp</span>
+                            </div>
+                            
+                            <div class="proyecto-links">
+                                <a href="https://onemoreresto.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn-secundario">
+                                    Ver Proyecto
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="proyecto-card">
+                        <div class="proyecto-image">
+                            <img src="/img/selah.webp" alt="Vista previa de Página de Velas Aromáticas" loading="lazy">
+                        </div>
+                        <div class="proyecto-content">
+                            <span class="proyecto-tag">Cliente</span>
+                            <h3>Página de Velas Aromáticas</h3>
+                            <p>Landing page moderna y optimizada para emprendimiento de velas artesanales. Diseño responsive con enfoque en conversión y experiencia de usuario.</p>
+                            
+                            <div class="tech-tags">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>  
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Responsive</span>
+                                <span class="tech-tag">Performance</span>
+                            </div>
+                            
+                            <div class="proyecto-links">
+                                <a href="https://www.xn--selh-7na.com.ar/" target="_blank" rel="noopener noreferrer" class="btn-secundario">
+                                    Ver Proyecto
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="proyecto-card">
+                        <div class="proyecto-image">
+                            <img src="/img/dashboard.webp" alt="Vista previa de Manducá" loading="lazy">
+                        </div>
+                        <div class="proyecto-content">
+                            <span class="proyecto-tag proyecto-tag-academic">Cliente</span>
+                            <h3>Manducá</h3>
+                            <p>Sistema de gestión de pedidos para restaurantes. Incluye panel de control, gestión de productos y pedidos, funcionalidad de WhatsApp para atención al cliente, y sistema POS integrado.</p>
+                            
+                            <div class="tech-tags">
+                                <span class="tech-tag">html</span>
+                                <span class="tech-tag">javascript</span>
+                                <span class="tech-tag">css</span>
+                                <span class="tech-tag">REST API</span>
+                                <span class="tech-tag">MySQL</span>
+
+                            </div>
+                            
+                            <div class="proyecto-links">
+                                <a href="#contacto" class="btn-secundario">
+                                    Consultar Demo
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="proyectos-footer">
+                    <p class="proyectos-note"><i class="fas fa-lightbulb"></i> Especializado en proyectos para emprendedores y pymes: soluciones ágiles, efectivas y con foco en resultados reales.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto Section -->
+        <section id="contacto" class="section contacto">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-number">04.</span>
+                    <h2>Trabajemos Juntos</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="contacto-content">
+                    <div class="contacto-info">
+                        <h3>¿Tenés un proyecto en mente?</h3>
+                        <p>Ya sea que necesites un sitio web, una aplicación o asesoramiento técnico, estoy acá para ayudarte a convertir tu idea en realidad.</p>
+                        
+                        <div class="contacto-items">
+                            <div class="contacto-item">
+                                <div class="contacto-icon"><i class="fas fa-envelope"></i></div>
+                                <div>
+                                    <h4>Email</h4>
+                                    <a href="mailto:dossantosdiegobr@gmail.com">dossantosdiegobr@gmail.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contacto-item">
+                                <div class="contacto-icon"><i class="fab fa-linkedin"></i></div>
+                                <div>
+                                    <h4>LinkedIn</h4>
+                                    <a href="https://www.linkedin.com/in/diego-dos-santos-9627b22a3/" target="_blank" rel="noopener noreferrer">/diego-dos-santos-dev</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contacto-item">
+                                <div class="contacto-icon"><i class="fab fa-github"></i></div>
+                                <div>
+                                    <h4>GitHub</h4>
+                                    <a href="https://github.com/GitDiegoDev" target="_blank" rel="noopener noreferrer">GitDiegoDev</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form id="contactForm" class="contacto-form" novalidate>
+                        <div class="form-group">
+                            <label for="nombre">Nombre completo</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Juan Pérez" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="juan@ejemplo.com" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="asunto">Asunto</label>
+                            <input type="text" id="asunto" name="asunto" placeholder="¿En qué puedo ayudarte?" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" placeholder="Contame sobre tu proyecto..." required rows="6"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-primario btn-submit">
+                            <span>Enviar Mensaje</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <div id="formMsg" class="form-message" role="status" aria-live="polite"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Diego.Dev</h3>
+                    <p>Transformando ideas en soluciones digitales</p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navegación</h4>
+                        <ul>
+                            <li><a href="#inicio">Inicio</a></li>
+                            <li><a href="#sobre">Sobre mí</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#proyectos">Proyectos</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Conectá conmigo</h4>
+                        <ul class="social-links">
+                            <li><a href="https://www.linkedin.com/in/diego-dos-santos-9627b22a3/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                            <li><a href="https://github.com/GitDiegoDev" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                            <li><a href="mailto:dossantosdiegobr@gmail.com">Email</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Todos los derechos reservados | Diego Dos Santos.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- EmailJS SDK - IMPORTANTE: Debe estar ANTES de script.js -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!-- Tu JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
