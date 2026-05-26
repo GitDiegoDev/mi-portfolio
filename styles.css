@@ -686,6 +686,67 @@ a:hover {
 }
 
 /* ==================== PROYECTOS ==================== */
+.proyectos-highlight {
+    background: rgba(107, 182, 255, 0.08);
+    border: 1px solid rgba(107, 182, 255, 0.15);
+    border-radius: 20px;
+    padding: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.highlight-intro {
+    max-width: 760px;
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+    opacity: 0.88;
+    line-height: 1.8;
+}
+
+.highlight-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+.highlight-card {
+    background: rgba(9, 16, 29, 0.9);
+    border: 1px solid rgba(107, 182, 255, 0.12);
+    border-radius: 18px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    transition: var(--transition-normal);
+}
+
+.highlight-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--primary-color);
+    box-shadow: var(--shadow-sm);
+}
+
+.highlight-icon {
+    width: 44px;
+    height: 44px;
+    display: grid;
+    place-items: center;
+    background: rgba(107, 182, 255, 0.16);
+    color: var(--primary-color);
+    border-radius: 14px;
+}
+
+.highlight-card h3 {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.highlight-card p {
+    margin: 0;
+    color: var(--text-color);
+    opacity: 0.85;
+    line-height: 1.7;
+}
+
 .proyectos-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -1128,6 +1189,23 @@ a:hover {
         gap: 1.5rem;
     }
 
+    .proyectos-highlight {
+        padding: 1.5rem;
+    }
+
+    .highlight-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .highlight-card {
+        padding: 1.25rem;
+    }
+
+    .highlight-icon {
+        width: 38px;
+        height: 38px;
+    }
+
     .contacto-content {
         grid-template-columns: 1fr;
         gap: 3rem;
@@ -1253,6 +1331,24 @@ a:hover {
     .proyectos-grid {
         grid-template-columns: 1fr;
         gap: 2rem;
+    }
+
+    .proyectos-highlight {
+        padding: 1.5rem;
+    }
+
+    .highlight-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .highlight-card {
+        padding: 1.25rem;
+    }
+
+    .highlight-icon {
+        width: 42px;
+        height: 42px;
     }
 
     .proyecto-image {
@@ -1490,6 +1586,22 @@ a:hover {
     .proyectos-note {
         padding: 1rem;
         font-size: 0.85rem;
+    }
+
+    .proyectos-highlight {
+        padding: 1.25rem;
+    }
+
+    .highlight-intro {
+        font-size: 0.95rem;
+    }
+
+    .highlight-grid {
+        gap: 0.75rem;
+    }
+
+    .highlight-card h3 {
+        font-size: 1rem;
     }
 
     .contacto-info h3 {
