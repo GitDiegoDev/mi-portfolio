@@ -98,6 +98,7 @@
 .fa-git-alt { color: #F05032; }
 .fa-github { color: #181717; }
 .fa-linkedin { color: #0A66C2; }
+.fa-whatsapp { color: #25d366; }
 .fa-envelope { color: #EA4335; }
 .fa-database { color: #4479A1; }
 .fa-code { color: var(--primary-color); }
@@ -1733,6 +1734,45 @@ a:hover {
 
     .section {
         padding: 3rem 0;
+    }
+}
+
+/* ==================== WHATSAPP FLOAT ==================== */
+.whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #25d366;
+    color: #FFF;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: var(--transition-normal);
+}
+
+.whatsapp-float i {
+    color: #FFF !important;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    background-color: #128c7e;
+    box-shadow: 0 0 20px rgba(37, 211, 102, 0.4);
+}
+
+@media (max-width: 767px) {
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+        font-size: 25px;
     }
 }
 
